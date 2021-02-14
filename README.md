@@ -1,4 +1,29 @@
 # Encryption1.0
+Type node .\encrypt1.0.js (can just do e then tab)
+Window Terminal
+PS C:\Users\milan> cd C:\code\Encryption1.0\
+PS C:\code\Encryption1.0> ls (that is ls not 1s)
+
+
+    Directory: C:\code\Encryption1.0
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+d-----       11/09/2020   2:41 PM                .vscode
+-a----       14/02/2021   2:32 PM           2443 encrypt1.0.js
+-a----       14/02/2021   2:24 PM            963 README.md
+
+
+PS C:\code\Encryption1.0> node .\encrypt1.0.js
+So you have a secret message...? ¯(°_o)/¯
+Invalid arguments (╯°□°）╯︵ ┻━┻. Please use E <message> or D <secret>.
+PS C:\code\Encryption1.0> node .\encrypt1.0.js E nuddle
+So you have a secret message...? ¯(°_o)/¯
+Clear text = nuddle
+Encoded text = !-31!20!320!3022!3122!48
+Decoded text = nuddle
+
 Encrypt stuff.
 
 Instructions for encoding:
@@ -9,9 +34,9 @@ Instructions for encoding:
 4 - Write out words like normal English layout.
 
 Shift:
-y = 5 if x<75
-    3 if 75<x<82
-    2 if 82<x
+y = 5 if x < 75
+    3 if 75 < x < 82
+    2 if 82 < x
 x = letter's position in alphabet (a = 1)
 
 Shift first letter = x*156/7.x + (150-yx) 
